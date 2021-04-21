@@ -16547,3 +16547,12 @@ body {
 .simditor-body img {
   max-width: 100%;
 }
+
+/* replies */
+.topic-reply a {
+  color: inherit;
+}
+.topic-reply .meta {
+  font-size: 0.9em;
+  color: #b3b3b3;
+}
