@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Reply;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Topic extends Model
@@ -47,4 +48,8 @@ class Topic extends Model
         return $query->orderBy('created_at', 'desc');
     }
 
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
 }
