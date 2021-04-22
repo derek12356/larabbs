@@ -35,7 +35,7 @@ class TranslateSlug implements ShouldQueue
      */
     public function handle()
     {
-        $slug = 'testing slug ' . date("F j, Y, g:i a");
+        $slug = '';
         \DB::table('topics')->where('id',$this->topic->id)->update(['slug'=>$slug]);
     }
 }
